@@ -3,6 +3,10 @@ import json
 import os
 import time
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import aisecurity
 from aisecurity.generated_openapi_client.models.ai_profile import AiProfile
 from aisecurity.scan.inline.scanner import Scanner

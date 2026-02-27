@@ -52,7 +52,6 @@ pip install pan-aisecurity
 ### With uv
 
 ```bash
-export $(cat .env | xargs)
 uv run main.py
 ```
 
@@ -60,7 +59,6 @@ uv run main.py
 
 ```bash
 source .venv/bin/activate
-export $(cat .env | xargs)
 python main.py
 ```
 
