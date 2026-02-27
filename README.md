@@ -14,8 +14,8 @@ Includes 25 pre-built malicious test prompts across categories like prompt injec
 ### 1. Clone the repo
 
 ```bash
-git clone git@github.com:cdot65/sdk-test.git
-cd sdk-test
+git clone git@github.com:cdot65/prisma-airs-sdk-example.git
+cd prisma-airs-sdk-example
 ```
 
 ### 2. Configure environment variables
