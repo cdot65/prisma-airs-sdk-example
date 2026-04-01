@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment variables
+.env*
+!.env.example
+
+# CSVs — ignore all except the example
+*.csv
+!prompts.example.csv
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+.claude/

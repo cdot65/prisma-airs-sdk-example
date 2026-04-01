@@ -1,0 +1,37 @@
+[project]
+name = "prisma-airs-sdk-example"
+version = "0.1.0"
+description = "Example scripts for batch-scanning prompts with the Palo Alto Networks Prisma AIRS SDK"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pan-aisecurity>=0.8.0.5.post2",
+    "pip>=26.0.1",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+    "pre-commit>=4.0",
+    "ruff>=0.9",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=. --cov-report=term-missing --cov-config=pyproject.toml"
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", ".venv/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if __name__",
+]
